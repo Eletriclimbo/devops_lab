@@ -25,4 +25,3 @@ else:
     print(-1)
 if sw == 1:
     print(index)
-
