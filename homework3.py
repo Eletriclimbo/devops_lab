@@ -1,6 +1,6 @@
+import json
 import psutil
 import time
-import json
 import yaml
 
 
