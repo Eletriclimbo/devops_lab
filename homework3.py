@@ -1,7 +1,7 @@
 import psutil
 import time
-import yaml
 import json
+import yaml
 
 
 def cpu_load():
@@ -38,7 +38,7 @@ output = my_conf['output']
 
 if output == 'txt':
     for j in range(3):
-        k = j+1
+        k = j + 1
         print("SNAPSHOT ", k, ": ", " TIME :", time.strftime("%H:%M:%S"), " CPU: ",
               cpu_load(), " Free memory: ", memory(), "Mb", " Free VM: ", v_mem(),
               "Mb", " IO (write_count): ",
