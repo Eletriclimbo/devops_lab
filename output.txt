@@ -1,0 +1,32 @@
+SNAPSHOT  1 :   TIME : 2018-07-11 18:17:12.913208  CPU:  12.5  Free memory:  722704  VM:  3306  IO:  1095092  Network:  3123724
+SNAPSHOT  2 :   TIME : 2018-07-11 18:17:23.122023  CPU:  5.0  Free memory:  722704  VM:  3305  IO:  1095286  Network:  3123788
+SNAPSHOT  3 :   TIME : 2018-07-11 18:17:33.334276  CPU:  20.5  Free memory:  722704  VM:  3306  IO:  1095377  Network:  3123804
+SNAPSHOT  1 :   TIME : 2018-07-11 18:18:12.464902  CPU:  38.1  Free memory:  722704  VM:  3305  IO:  1095812  Network:  3123877
+SNAPSHOT  2 :   TIME : 2018-07-11 18:18:22.677924  CPU:  2.5  Free memory:  722704  VM:  3304  IO:  1095871  Network:  3123906
+SNAPSHOT  3 :   TIME : 2018-07-11 18:18:32.892845  CPU:  10.3  Free memory:  722704  VM:  3303  IO:  1096131  Network:  3123920
+SNAPSHOT  1 :   TIME : 2018-07-11 18:19:05.193792  CPU:  12.5  Free memory:  722704  VM:  3302  IO:  1096435  Network:  3123988
+SNAPSHOT  2 :   TIME : 2018-07-11 18:19:15.407323  CPU:  32.5  Free memory:  722704  VM:  3302  IO:  1096486  Network:  3123999
+SNAPSHOT  3 :   TIME : 2018-07-11 18:19:25.620328  CPU:  0.0  Free memory:  722704  VM:  3302  IO:  1096562  Network:  3124022
+SNAPSHOT  1 :   TIME : 2018-07-11 18:21:28.698451  CPU:  12.8  Free memory:  722704  Mb  VM:  3322  Mb  IO (write_count):  1097586  Network (packets sent):  3124204
+SNAPSHOT  2 :   TIME : 2018-07-11 18:21:38.911339  CPU:  2.5  Free memory:  722704  Mb  VM:  3323  Mb  IO (write_count):  1097618  Network (packets sent):  3124212
+SNAPSHOT  3 :   TIME : 2018-07-11 18:21:49.125313  CPU:  5.1  Free memory:  722704  Mb  VM:  3316  Mb  IO (write_count):  1097654  Network (packets sent):  3124224
+SNAPSHOT  1 :   TIME : 2018-07-11 18:22:18.266643  CPU:  12.2  Free memory:  722704 Mb  VM:  3322 Mb  IO (write_count):  1097914  Network (packets sent):  3124261
+SNAPSHOT  2 :   TIME : 2018-07-11 18:22:28.481317  CPU:  30.0  Free memory:  722704 Mb  VM:  3319 Mb  IO (write_count):  1097963  Network (packets sent):  3124284
+SNAPSHOT  3 :   TIME : 2018-07-11 18:22:38.695707  CPU:  12.8  Free memory:  722704 Mb  VM:  3319 Mb  IO (write_count):  1098094  Network (packets sent):  3124311
+SNAPSHOT  1 :   TIME : 2018-07-11 18:24:56.291019  CPU:  [10.0, 20.0, 9.1, 10.0]  Free memory:  722704 Mb  VM:  3272 Mb  IO (write_count):  1099243  Network (packets sent):  3124612
+SNAPSHOT  2 :   TIME : 2018-07-11 18:25:01.501079  CPU:  [30.0, 44.4, 11.1, 40.0]  Free memory:  722704 Mb  VM:  3272 Mb  IO (write_count):  1099258  Network (packets sent):  3124621
+SNAPSHOT  3 :   TIME : 2018-07-11 18:25:06.706949  CPU:  [20.0, 0.0, 30.0, 11.1]  Free memory:  722704 Mb  VM:  3270 Mb  IO (write_count):  1099284  Network (packets sent):  3124627
+SNAPSHOT  1 :   TIME : 18:31:23  CPU:  [0.0, 10.0, 10.0, 0.0]  Free memory:  722703 Mb  VM:  3341 Mb  IO (write_count):  1102256  Network (packets sent):  3125713
+SNAPSHOT  2 :   TIME : 18:31:28  CPU:  [0.0, 0.0, 18.2, 9.1]  Free memory:  722703 Mb  VM:  3342 Mb  IO (write_count):  1102327  Network (packets sent):  3125715
+SNAPSHOT  3 :   TIME : 18:31:33  CPU:  [20.0, 40.0, 11.1, 37.5]  Free memory:  722703 Mb  VM:  3342 Mb  IO (write_count):  1102352  Network (packets sent):  3125720
+SNAPSHOT  1 :   TIME : 18:48:35  CPU:  [0.0, 0.0, 0.0, 10.0]  Free memory:  722701 Mb  VM:  3170 Mb  IO (write_count):  1112776  Network (packets sent):  3129421
+SNAPSHOT  2 :   TIME : 18:49:00  CPU:  [9.1, 0.0, 10.0, 0.0]  Free memory:  722701 Mb  VM:  3243 Mb  IO (write_count):  1113195  Network (packets sent):  3129504
+SNAPSHOT  3 :   TIME : 18:49:25  CPU:  [20.0, 40.0, 20.0, 40.0]  Free memory:  722701 Mb  VM:  3225 Mb  IO (write_count):  1113463  Network (packets sent):  3129639
+SNAPSHOT  4 :   TIME : 18:49:50  CPU:  [0.0, 0.0, 9.1, 0.0]  Free memory:  722701 Mb  VM:  3223 Mb  IO (write_count):  1113795  Network (packets sent):  3129683
+SNAPSHOT  5 :   TIME : 18:50:15  CPU:  [10.0, 0.0, 0.0, 0.0]  Free memory:  722701 Mb  VM:  3220 Mb  IO (write_count):  1113861  Network (packets sent):  3129724
+SNAPSHOT  1 :   TIME : 18:51:31  CPU:  [18.2, 0.0, 0.0, 9.1]  Free memory:  722701 Mb  VM:  3205 Mb  IO (write_count):  1114342  Network (packets sent):  3129844
+SNAPSHOT  2 :   TIME : 18:51:56  CPU:  [30.0, 45.5, 30.0, 20.0]  Free memory:  722701 Mb  VM:  3201 Mb  IO (write_count):  1114434  Network (packets sent):  3129879
+SNAPSHOT  3 :   TIME : 18:52:21  CPU:  [18.2, 30.0, 22.2, 10.0]  Free memory:  722701 Mb  VM:  3190 Mb  IO (write_count):  1114733  Network (packets sent):  3129914
+SNAPSHOT  1 :   TIME : 20:20:59  CPU:  [10.0, 10.0, 0.0, 0.0]  Free memory:  722700 Mb  Free VM:  2881 Mb  IO (write_count):  1168308  Network (packets sent):  3150197
+SNAPSHOT  2 :   TIME : 20:21:24  CPU:  [0.0, 9.1, 0.0, 0.0]  Free memory:  722700 Mb  Free VM:  2884 Mb  IO (write_count):  1168606  Network (packets sent):  3150244
+SNAPSHOT  3 :   TIME : 20:21:50  CPU:  [0.0, 0.0, 10.0, 0.0]  Free memory:  722700 Mb  Free VM:  2884 Mb  IO (write_count):  1168762  Network (packets sent):  3150282
