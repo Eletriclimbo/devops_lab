@@ -7,18 +7,18 @@ for j in range(int(l)):
     p = input("Sex : ")
     Age_array.append(m)
     Sex_array.append(p)
-max = int(0)
+mym = int(0)
 index = int(l)
 sw = int(0)
 for i in range(int(l)):
     if int(Sex_array[i]) == 1:
-        if max == int(Age_array[i]):
+        if mym == int(Age_array[i]):
             if index > i:
                 print("ind")
                 index = i
-        if max < int(Age_array[i]):
-            print ("MAX")
-            max = int(Age_array[i])
+        if mym < int(Age_array[i]):
+            print("MAX")
+            mym = int(Age_array[i])
             index = i
             sw = int(1)
 else:

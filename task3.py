@@ -5,4 +5,3 @@ bb = "{0:b}".format(b)
 print(aa)
 print(bb)
 print(bin(a ^ b).count('1'))
-
