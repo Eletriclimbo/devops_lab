@@ -4,7 +4,7 @@ import time
 import yaml
 
 
-class Geu:
+class Geu(object):
     @staticmethod
     def cpu_load():
         return psutil.cpu_percent(0.1, True)
