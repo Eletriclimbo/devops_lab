@@ -23,4 +23,3 @@ if sw == 1:
     print("Index: ", index)
 elif sw == 0:
     print(-1, "       {No one}")
-
