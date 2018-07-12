@@ -8,20 +8,19 @@ for j in range(int(l)):
     Age_array.append(m)
     Sex_array.append(p)
 mym = int(0)
-index = int(l)
+index = int(0)
 sw = int(0)
 for i in range(int(l)):
     if int(Sex_array[i]) == 1:
         if mym == int(Age_array[i]):
             if index > i:
-                print("ind")
                 index = i
         if mym < int(Age_array[i]):
-            print("MAX")
             mym = int(Age_array[i])
             index = i
             sw = int(1)
-else:
-    print(-1)
 if sw == 1:
-    print(index)
+    print("Index: ", index)
+elif sw == 0:
+    print(-1, "       {No one}")
+

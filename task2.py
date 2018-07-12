@@ -1,7 +1,7 @@
+print("Input first:")
 a = list(input())
+print("Input second")
 b = list(input())
-print(a)
-print(b)
 if b[0] == '-' and a[0] != '-':
     b.pop(0)
     a.sort()
@@ -12,10 +12,9 @@ if b[0] == '-' and a[0] != '-':
     a = int("".join(str(x) for x in a))
     b = int("".join(str(e) for e in b))
     mdiff = int(a) - int(b)
-    print(mdiff)
+    print('\n', "Max difference:", mdiff)
 
 elif a[0] == '-' and b[0] != '-':
-    print("2")
     a.pop(0)
     b.sort()
     a.sort()
@@ -23,7 +22,8 @@ elif a[0] == '-' and b[0] != '-':
     b = int("".join(str(x) for x in b))
     a = int("".join(str(e) for e in a))
     mdiff = int(a) - int(b)
-    print(mdiff)
+    print('\n', "Max difference:", mdiff)
+
 elif a[0] == '-' and b[0] == '-':
     a.sort()
     a.reverse()
@@ -37,9 +37,9 @@ elif a[0] == '-' and b[0] == '-':
         b.insert(0, "-")
     a = int("".join(str(x) for x in a))
     b = int("".join(str(e) for e in b))
-    print("a=", a, "b=", b)
     mdiff = int(a) - int(b)
-    print(mdiff)
+    print('\n', "Max difference:", mdiff)
+
 else:
     a.sort()
     a.reverse()
@@ -48,4 +48,4 @@ else:
     b = int("".join(str(e) for e in b))
     print("a=", a, "b=", b)
     mdiff = int(a) - int(b)
-    print(mdiff)
+    print('\n', "Max difference:", mdiff)

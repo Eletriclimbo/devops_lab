@@ -30,4 +30,4 @@ for i in range(0, ip_number, 2):
                 and ipaddress.ip_address(IP2) in \
                 ipaddress.ip_network(net1):
             mm += 1
-    print("mm", mm)
+    print("How many common masks: ", mm)
