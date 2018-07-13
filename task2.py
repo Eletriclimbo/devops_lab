@@ -1,7 +1,5 @@
-a = list(input())
-b = list(input())
-print(a)
-print(b)
+a = list(input('Insert a: '))
+b = list(input('Insert b: '))
 if b[0] == '-' and a[0] != '-':
     b.pop(0)
     a.sort()
