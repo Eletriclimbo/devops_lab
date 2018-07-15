@@ -39,24 +39,24 @@ def get_getapi(username, rep):
 
 def take_day_opened(data):
     for k in data:
-        print('User: ', k['user']['login'],
-              '\n Day opened:k6 ',
+        print('User: '+ k['user']['login']+
+              '\n Day opened:k6 '+
               datetime.datetime.strptime(str(k["created_at"]),
                '%Y-%m-%dT%H:%M:%SZ').strftime('%A'))
 
 
 def take_hour_opened(data):
     for k in data:
-        print('User: ', k['user']['login'],
-              '\n Hour opened: ',
+        print('User: '+ k['user']['login']+
+              '\n Hour opened: '+
               datetime.datetime.strptime(str(k["created_at"]),
                                          '%Y-%m-%dT%H:%M:%SZ').strftime('%H'))
 
 
 def take_week_opened(data):
     for k in data:
-        print('User: ', k['user']['login'],
-              '\n Week opened: ',
+        print('User: '+ k['user']['login']+
+              '\n Week opened: '+
               datetime.datetime.strptime(str(k["created_at"]),
                                          '%Y-%m-%dT%H:%M:%SZ').strftime('%V'))
 
@@ -68,11 +68,11 @@ def user_who_opened(data):
 
 def number_of_days_opened(data):
     for k in data:
-        print('User: ', k['user']['login'],
-              '\n Number of days: ',
+        print('User: '+ k['user']['login']+
+              '\n Number of days: '+
               int(datetime.datetime.now().strftime('%j')) -
-              int(datetime.datetime.strptime(str(k["created_at"]), '%Y-%m\
-              -%dT%H:%M:%SZ').strftime('%j')))
+              int(datetime.datetime.strptime(str(k["created_at"]),
+              '%Y-%m-%dT%H:%M:%SZ').strftime('%j')))
 
 
 def first():
