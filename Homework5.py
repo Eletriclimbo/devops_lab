@@ -5,8 +5,8 @@ import requests
 
 
 def get_arg():
-    parser=argparse.ArgumentParser(description='Get PR(Pull Request) '
-                                     'statistics from GitHub')
+    parser = argparse.ArgumentParser(description='Get PR(Pull \
+    Request)statistics from GitHub')
     parser.add_argument('-v', '--version', action='version',
                         version='%(prog)s 1.0')
     parser.add_argument('-n', '--number of days', action="store_true",
