@@ -42,7 +42,8 @@ def take_day_opened(data):
         print('User: ', k['user']['login'],
               '\n Day opened:k6 ',
               datetime.datetime.strptime(str(k["created_at"]),
-                                            '%Y-%m-%dT%H:%M:%SZ').strftime('%A'))
+                                            '%Y-%m-%dT%H:%M:%SZ'
+                                         ).strftime('%A'))
 
 
 def take_hour_opened(data):
