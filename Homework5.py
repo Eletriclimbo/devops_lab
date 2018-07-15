@@ -29,7 +29,6 @@ def get_arg():
 
 
 def get_getapi(username, rep):
-    import json
     p = getpass.getpass()
     result = requests.get('https://api.github.com/repos/'
                           'alenaPy/{0}/pulls?'
@@ -42,12 +41,10 @@ def take_day_opened(data):
     for k in data:
         print('User: ', k['user']['login'],
               '\n Day opened:k6 ',
-              datetime.datetime.strptime(str(k[""
-                                               "creat"
-                                               "ed_at"]),
-                                                              '%Y-%m-'
-                                                              '%dT%H'
-                                                              ':%M:%SZ').strftime('%A'))
+              datetime.datetime.strptime(str(k["created_at"]),
+                                            '%Y-%m-'
+                                            '%dT%H'
+                                            ':%M:%SZ').strftime('%A'))
 
 
 def take_hour_opened(data):
@@ -77,7 +74,7 @@ def number_of_days_opened(data):
               '\n Number of days: ',
               int(datetime.datetime.now().strftime('%j')) -
               int(datetime.datetime.strptime(str(k["created_at"]),
-                                             '%Y-%m-%dT%H:%M:%SZ').strftime('%j')))
+                    '%Y-%m-%dT%H:%M:%SZ').strftime('%j')))
 
 
 def first():
