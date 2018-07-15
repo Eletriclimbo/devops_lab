@@ -1,12 +1,13 @@
 import argparse
 import datetime
 import getpass
-import json
 import requests
 
 
 def get_arg():
-    parser = argparse.ArgumentParser(description='Get PR(Pull Request) statistics from GitHub')
+    parser = argparse.ArgumentParser(description=
+                                     'Get PR(Pull Request) '
+                                     'statistics from GitHub')
     parser.add_argument('-v', '--version', action='version',
                         version='%(prog)s 1.0')
     parser.add_argument('-n', '--number of days', action="store_true",
@@ -28,6 +29,7 @@ def get_arg():
 
 
 def get_getapi(username, rep):
+    import json
     p = getpass.getpass()
     result = requests.get('https://api.github.com/repos/'
                           'alenaPy/{0}/pulls?'
@@ -39,8 +41,13 @@ def get_getapi(username, rep):
 def take_day_opened(data):
     for k in data:
         print('User: ', k['user']['login'],
-              '\n Day opened: ', datetime.datetime.strptime(str(k["created_at"]),
-                                                           '%Y-%m-%dT%H:%M:%SZ').strftime('%A'))
+              '\n Day opened:k6 ',
+              datetime.datetime.strptime(str(k[""
+                                               "creat"
+                                               "ed_at"]),
+                                                              '%Y-%m-'
+                                                              '%dT%H'
+                                                              ':%M:%SZ').strftime('%A'))
 
 
 def take_hour_opened(data):
@@ -67,7 +74,8 @@ def user_who_opened(data):
 def number_of_days_opened(data):
     for k in data:
         print('User: ', k['user']['login'],
-              '\n Number of days: ', int(datetime.datetime.now().strftime('%j')) -
+              '\n Number of days: ',
+              int(datetime.datetime.now().strftime('%j')) -
               int(datetime.datetime.strptime(str(k["created_at"]),
                                              '%Y-%m-%dT%H:%M:%SZ').strftime('%j')))
 
