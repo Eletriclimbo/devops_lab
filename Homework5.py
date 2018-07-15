@@ -1,4 +1,4 @@
-import argparse
+﻿import argparse
 import datetime
 import getpass
 import requests
@@ -17,7 +17,7 @@ def get_arg():
                         dest='d', help='day of the week')
     parser.add_argument('-H', '--hour', action="store_true",
                         dest='h', help='hour of the day')
-    parser.add_argument('-w', '--number', action="store_true",
+    parser.add_argument('-w', '--week', action="store_true",
                         dest='w', help='number of weeks')
     parser.add_argument(metavar='<user>', type=str,
                         dest='user', help='login')
