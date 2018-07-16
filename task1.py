@@ -1,4 +1,4 @@
-b = list()
+b = []
 while 1 == 1:
     word = input().split()
     if word[0] == 'insert':

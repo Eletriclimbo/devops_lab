@@ -1,5 +1,5 @@
-Age_array = list()
-Sex_array = list()
+Age_array = []
+Sex_array = []
 print("Number of peoples: ")
 l = int(input())
 for j in range(int(l)):
@@ -14,14 +14,12 @@ for i in range(int(l)):
     if int(Sex_array[i]) == 1:
         if mym == int(Age_array[i]):
             if index > i:
-                print("ind")
                 index = i
         if mym < int(Age_array[i]):
-            print("MAX")
             mym = int(Age_array[i])
             index = i
             sw = int(1)
-else:
-    print(-1)
 if sw == 1:
     print(index)
+else:
+    print(-1)
