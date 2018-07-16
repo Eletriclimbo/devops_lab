@@ -47,7 +47,7 @@ elif a[0] == '-' and b[0] == '-':
             aa.append(0)
             j += 1
     a.sort()
-    a = a[j+1:]
+    a = a[j + 1:]
     a[1:1] = aa
     a.insert(0, "-")
     b.sort()

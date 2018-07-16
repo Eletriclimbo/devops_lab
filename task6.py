@@ -25,9 +25,9 @@ for i in range(0, ip_number, 2):
         IP2 = ip_array[i + 1]
         MASK = mask_array[j]
         net1 = ipaddress.IPv4Network(IP1 + '/' + MASK, False)
-        if (ipaddress.ip_address(IP1) in
-                ipaddress.ip_network(net1)
-                and ipaddress.ip_address(IP2) in
-                ipaddress.ip_network(net1)):
+        if ipaddress.ip_address(IP1) in \
+                ipaddress.ip_network(net1)\
+                and ipaddress.ip_address(IP2) in \
+                ipaddress.ip_network(net1):
             mm += 1
     print("mm", mm)
