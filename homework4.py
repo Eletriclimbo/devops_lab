@@ -26,10 +26,8 @@ class Geu(object):
         return psutil.net_io_counters().packets_sent
 
 
-x = Geu()
 with open("conf.yaml", 'r') as stream:
     my_conf = yaml.load(stream)
-    stream.close()
 interval = my_conf['interval']
 output = my_conf['output']
 
@@ -38,36 +36,34 @@ if output == 'txt':
         k = j + 1
         print("SNAPSHOT ", k, ": ", " TIME :",
               time.strftime("%H:%M:%S"), " CPU: ",
-              x.cpu_load(), " Free memory: ",
-              x.memory(), "Mb", " Free VM: ", x.v_mem(),
+              Geu.cpu_load(), " Free memory: ",
+              Geu.memory(), "Mb", " Free VM: ", Geu.v_mem(),
               "Mb", " IO (write_count): ",
-              x.io_check(), " Network (packets sent): ",
-              x.network(), file=open("output.txt", "a"))
+              Geu.io_check(), " Network (packets sent): ",
+              Geu.network(), file=open("output.txt", "a"))
         print("SNAPSHOT ", k, ": ", " TIME :",
               time.strftime("%H:%M:%S"), " CPU: ",
-              x.cpu_load(), " Free memory: ",
-              x.memory(), "Mb", " Free VM: ", x.v_mem(),
+              Geu.cpu_load(), " Free memory: ",
+              Geu.memory(), "Mb", " Free VM: ", Geu.v_mem(),
               "Mb", " IO (write_count): ",
-              x.io_check(), " Network (packets sent): ", x.network())
+              Geu.io_check(), " Network (packets sent): ", Geu.network())
         time.sleep(1 * interval)
-aa = list()
+aa = []
 if output == 'json':
     for j in range(3):
         k = j + 1
         json_d = {
             'SNAPSHOT ': k,
             'TIME': time.strftime("%H:%M:%S"),
-            'CPU': x.cpu_load(),
-            'Free memory': x.memory(),
-            'Free VM': x.v_mem(),
-            'IO (write_count)': x.io_check(),
-            'Network (packets sent)': x.network(),
+            'CPU': Geu.cpu_load(),
+            'Free memory': Geu.memory(),
+            'Free VM': Geu.v_mem(),
+            'IO (write_count)': Geu.io_check(),
+            'Network (packets sent)': Geu.network(),
         }
-        print("YEES")
         aa.append(json_d)
         print(aa)
         time.sleep(1 * interval)
 
 with open('json_data.json', 'a+') as sec:
     json.dump(aa, sec)
-    sec.close()
